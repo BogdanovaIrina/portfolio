@@ -1,0 +1,51 @@
+.main {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.icon {
+    width: 100%;
+}
+.pos {
+    position: relative;
+}
+.but {
+    position: absolute;
+    top: 40%;
+    left:20%;
+    border: 1px solid #00b074;
+    width: 60%;
+    height: 20%;
+    background-color: transparent;
+    letter-spacing: 1px;
+    color: #00b074;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.but:hover {
+    background-color: #00b074;
+    color:#fff;
+}
+
+.main h3,span {
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 1.2;
+}
+.main h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.main span {
+    padding-bottom : 5%;
+    padding-right: 5%;
+    font-size: 14px;
+    opacity: .5;
+    line-height: 1.6;
+}

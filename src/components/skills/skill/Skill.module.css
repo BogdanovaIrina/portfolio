@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #343a40;
+}
+.main:hover {
+    background-color: #20c997;
+    color:#fff;
+}
+.main h3,span {
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 1.2;
+}
+.main h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.main span {
+    padding-bottom : 5%;
+    font-size: 14px;
+    opacity: .5;
+    line-height: 1.6;
+}
+.icon img{
+    padding-top: 5%;
+    padding-left: 5%;
+}

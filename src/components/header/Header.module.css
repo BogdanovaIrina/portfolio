@@ -1,0 +1,10 @@
+.main {
+    height: 75px;
+    background-color: #e9ecef;
+    display:flex;
+    justify-content:right;
+    align-items: center;
+}
+.main:hover {
+    background-color: #262626;
+}
