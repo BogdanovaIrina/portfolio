@@ -1,0 +1,37 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+        a {
+            @include text(#777, $lightFontFamily, 14px, 400);
+            padding-right: 15px;
+            letter-spacing: .4px;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            &:hover {
+                color: #afafaf;
+            }
+            &:after {
+                content:'';
+                width:90%;
+                height: 2px;
+                background-color: #afafaf;
+                border-radius: 4px;
+                position: absolute;
+                left: -4px;
+                bottom: -2px;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform .25s ease;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+            }
+        }
+}

@@ -1,0 +1,25 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    margin-top: 100px;
+    @media screen and (max-width: 1520px) {
+    margin-top: 330px;
+    }
+    @media screen and (max-width: 920px) {
+    margin-top: 0px;
+}
+
+    .skills {
+        display: flex;
+        width: $mainWidth;
+        justify-content: space-between;
+        height: 100%;
+        flex-wrap: wrap;
+
+    }
+}

@@ -5,8 +5,8 @@ import {Main} from "./components/main/Main";
 import {Skills} from "./components/skills/Skills";
 import {Portfolio} from "./components/portfolio/Portfolio";
 import {Remote} from "./components/remote/Remote";
-import {Contact} from "./components/contact/Contact";
 import {Footer} from "./components/footer/Footer";
+import {Copyright} from "./components/copyright/Copyright";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Skills />
         <Portfolio />
         <Remote />
-        <Contact />
         <Footer />
+        <Copyright />
     </div>
   )
 }

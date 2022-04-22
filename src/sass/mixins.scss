@@ -1,0 +1,13 @@
+@mixin text($color, $fontFamily, $fontSize, $fontWeight) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin container($minHeight, $alignItems, $justifyContent) {
+  display: flex;
+  min-height: $minHeight;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}

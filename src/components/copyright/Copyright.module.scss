@@ -1,0 +1,48 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+  @include container(20vh, center, center);
+  margin-bottom: 30px;
+
+  .copy {
+    display: flex;
+    width: $mainWidth;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .links {
+      width: 50%;
+      display: flex;
+      justify-content: start;
+
+      a {
+        text-decoration: none;
+        @include text(#919191, $lightFontFamily, 13px, 400);
+        padding-right: 15px;
+        transition: all .3s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+        @media screen and (max-width:850px) {
+          font-size: 10px;
+          padding-right: 10px;
+        }
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    p {
+      @include text(#919191, $lightFontFamily, 13px, 400);
+      @media screen and (max-width:850px) {
+        font-size: 10px;
+      }
+      @media screen and (max-width:650px) {
+        font-size: 8px;
+      }
+    }
+  }
+}

@@ -1,13 +1,18 @@
 import React from 'react';
-import s from './Remote.module.css'
+import s from './Remote.module.scss';
+import {Title} from "../title/Title";
 
 export const Remote = () => {
     return (
         <div className={s.main}>
-            <h2>Looking into remote work</h2>
-            <button className={s.btn}>
-                <span>Hire me</span>
-            </button>
+            <div className={s.wrapper}>
+                <div className={s.title}>
+                    <Title title={'Looking into remote work'}/>
+                </div>
+                <div className={s.wrapbtn}>
+                    <input className={s.btn} type='submit' value='Hire me'/>
+                </div>
+            </div>
         </div>
     )
 }

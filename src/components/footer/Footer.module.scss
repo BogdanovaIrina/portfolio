@@ -1,0 +1,161 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    .foot {
+        display: flex;
+        width: $mainWidth;
+        justify-content: space-between;
+        margin-top: 60px;
+        flex-wrap:wrap;
+
+        .left {
+            width: 50%;
+            @media screen and (max-width:1550px) {
+                width: 100%;
+            }
+
+            .inp {
+                display: flex;
+                margin-bottom: 40px;
+                justify-content: space-between;
+                @media screen and (max-width:1550px) {
+                    justify-content: start;
+                }
+                @media screen and (max-width:550px) {
+                    flex-direction: column;
+                }
+
+                input {
+                    font-weight: 300;
+                    line-height: 26px;
+                    color: #b3b3b3;
+                    border: none;
+                    border-bottom: 1px solid #d9d9d9;
+                    padding: 5px 0;
+                    outline: none;
+                    font-family: 'Montserrat', sans-serif;
+                    @media screen and (max-width:1550px) {
+                        margin-right: 50px;
+                    }
+                    @media screen and (max-width:610px) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            textarea {
+                max-height: 148px;
+                font-weight: 300;
+                line-height: 26px;
+                color: #b3b3b3;
+                border: 1px solid #d9d9d9;
+                padding: 10px 20px;
+                width: 100%;
+                margin-bottom: 40px;
+                outline: none;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .btn {
+                @include text(#fff, $lightFontFamily, 14px, 400);
+                height: 40px;
+                padding: 0 40px;
+                transition: all .3s ease 0s;
+                border: 1px solid #d9d9d9;
+                cursor: pointer;
+                background-color: #393939;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff !important;
+                }
+
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            flex-direction: column;
+            width: 50%;
+            @media screen and (max-width:1550px) {
+                width: 100%;
+                order: -1;
+                margin-bottom: 40px;
+            }
+
+            .subright {
+                width: 75%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                min-height: 60px;
+                @media screen and (max-width:850px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width:610px) {
+                    justify-content: start;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    margin-right: 20px;
+                    width: 300px;
+
+                    a {
+                        outline: none;
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: #979797;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: Montserrat, sans-serif;
+                        padding-right: 0;
+                        @media screen and (max-width:530px) {
+                            font-size: 10px;
+                        }
+                    }
+
+                    h4 {
+                        @include text(#7b7b7b, $lightFontFamily, 18px, 400);
+                        margin: 0;
+                        text-transform: capitalize;
+                        @media screen and (max-width:530px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .circle {
+                    border: 1px solid #a8a8a8;
+                    border-radius: 50%;
+                    font-size: 24px;
+                    height: 47px;
+                    line-height: 47px;
+                    text-align: center;
+                    width: 47px;
+                    color: #919191;
+                    @media screen and (max-width:530px) {
+                        font-size: 14px;
+                        width: 27px;
+                        height: 27px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
