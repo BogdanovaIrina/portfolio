@@ -7,13 +7,14 @@
 
   .copy {
     display: flex;
-    width: $mainWidth;
+    min-width: $mainWidth;
     justify-content: space-between;
     align-items: center;
-
+    @media screen and (max-width:400px) {
+      flex-direction: column;
+    }
 
     .links {
-      width: 50%;
       display: flex;
       justify-content: start;
 
@@ -24,10 +25,6 @@
         transition: all .3s ease;
         cursor: pointer;
         text-transform: uppercase;
-        @media screen and (max-width:850px) {
-          font-size: 10px;
-          padding-right: 10px;
-        }
 
         &:hover {
           color: #000;
@@ -37,11 +34,8 @@
 
     p {
       @include text(#919191, $lightFontFamily, 13px, 400);
-      @media screen and (max-width:850px) {
-        font-size: 10px;
-      }
-      @media screen and (max-width:650px) {
-        font-size: 8px;
+      @media screen and (max-width:400px) {
+        margin-top: 20px;
       }
     }
   }

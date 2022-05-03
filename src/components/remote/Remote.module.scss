@@ -9,11 +9,10 @@
 
   .wrapper {
     @include container(80%, center, space-between);
-    width: $mainWidth;
     flex-direction: column;
 
     .title {
-      width: 50%;
+        text-align: center;
     }
 
     .wrapbtn {

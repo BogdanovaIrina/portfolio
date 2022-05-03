@@ -21,7 +21,7 @@ export const Portfolio = () => {
                 <div className={s.wrapper}>
                     <div className={s.block1}>
                         <Project title={'Todolist'}
-                                 descr={'TS/Redux/RestAPI/Thunk/Material UI'}
+                                 descr={'TS/Redux/RestAPI/Material UI'}
                                  style={todolist}/>
                     </div>
                     <div className={s.block2}>

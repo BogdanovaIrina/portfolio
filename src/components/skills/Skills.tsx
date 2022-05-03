@@ -16,7 +16,7 @@ export const Skills = () => {
                        skillDescription={'React/Redux/AXIOS'}
                        icon={faReact}/>
                 <Skill skillTitle={'Foundation'}
-                       skillDescription={'HTML5/CSS3/JavaScript/TypeScript'}
+                       skillDescription={'HTML5/CSS3/JS/TS'}
                        icon={faJsSquare}/>
                 <Skill skillTitle={'Testing/Design'}
                        skillDescription={'Unit Tests/Storybook/Material UI'}

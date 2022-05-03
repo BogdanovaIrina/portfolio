@@ -59,6 +59,10 @@
             padding-left: 5%;
             line-height: 1.2;
         }
+        span {
+            padding-top: 5%;
+            line-height: 1.2;
+        }
 
         h3 {
             @include text(#757575, $lightFontFamily, 14px, 500);

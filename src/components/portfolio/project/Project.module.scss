@@ -11,6 +11,20 @@
   position: relative;
   transition: all .3s ease 0s;
 
+  @media screen and (max-width: 400px) {
+    .text {
+      opacity: 1 !important;
+    }
+
+    &:after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, .5);
+      position: absolute;
+    }
+  }
+
   &:hover {
     transform: scale(1.02);
 
@@ -41,6 +55,7 @@
       left: 25%;
       opacity: 0;
       z-index: 10;
+
 
       .link {
         background-color: rgba(73, 73, 73, .35);

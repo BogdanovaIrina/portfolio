@@ -17,7 +17,7 @@ export const Footer = () => {
                             <input type="text" placeholder='Your name'/>
                             <input type="email" placeholder='Your email'/>
                         </div>
-                        <textarea placeholder='Your Message' cols={40} rows={10}/>
+                        <textarea style={{resize:"none"}} placeholder='Your Message' cols={40} rows={10}/>
                         <input className={s.btn} type='submit' value='Send message'/>
                     </form>
                 </div>

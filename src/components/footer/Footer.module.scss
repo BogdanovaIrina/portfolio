@@ -10,7 +10,6 @@
 
     .foot {
         display: flex;
-        width: $mainWidth;
         justify-content: space-between;
         margin-top: 60px;
         flex-wrap:wrap;
@@ -146,6 +145,7 @@
                     line-height: 47px;
                     text-align: center;
                     width: 47px;
+                    min-width: 27px;
                     color: #919191;
                     @media screen and (max-width:530px) {
                         font-size: 14px;
